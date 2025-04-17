@@ -1,0 +1,144 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure full height for html and body */
+html, body {
+    height: 100%; /* Take up full height of the screen */
+}
+
+/* Set up the body font family, background color, and text alignment */
+body {
+    font-family: 'Arial', sans-serif; /* Use Arial font */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+    text-align: center; /* Center all text */
+    line-height: 1.6; /* Slightly increased line height for readability */
+}
+
+/* Header section */
+.header {
+    background-color: #ADD8E6; /* Light blue background */
+    padding: 30px; /* Space inside the header */
+    margin-bottom: 40px; /* Space below the header */
+}
+
+h1 {
+    color: #003366; /* Dark blue color */
+    font-size: 3rem; /* Larger font size */
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #003366; /* Dark blue background */
+}
+
+.navbar-nav a {
+    font-family: 'Verdana', sans-serif; /* Specific font for nav links */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding around the links */
+    text-decoration: none; /* Remove underlines */
+    display: inline-block; /* Make links behave like blocks */
+    margin: 5px;
+}
+
+.navbar-nav a:hover {
+    background-color: #005bb5; /* Darker blue when hovered */
+    border-radius: 5px; /* Round the corners of the link */
+}
+
+/* Styling for content section */
+.content {
+    background-color: #ffffff; /* White background */
+    padding: 40px; /* Space inside the content */
+    margin: 0 auto; /* Center the content block */
+    max-width: 900px; /* Limit the width for readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* List of dance styles */
+.centered-list {
+    display: inline-block; /* Makes the list shrink to fit content */
+    text-align: left; /* Keeps items left-aligned inside the centered block */
+    margin: 20px auto; /* Centers the block itself */
+    list-style-position: inside;
+}
+
+/* Quote styling */
+.quote {
+    color: #888888; /* Light gray color */
+    font-style: italic; /* Italicized text */
+    margin: 20px 0; /* Space above and below the quote */
+}
+
+/* Image styling */
+img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+    margin: 20px 0; /* Add some space around the image */
+}
+
+/* Video iframe styling */
+iframe {
+    width: 100%; /* Make the video responsive */
+    height: 315px; /* Fixed height for the video */
+    max-width: 560px; /* Max width for the video */
+    margin: 20px 0; /* Add space around the video */
+}
+
+/* Button container styling */
+.button-container {
+    margin-top: 30px; /* Space above the button */
+}
+
+.btn {
+    background-color: #003366; /* Dark blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Add padding inside the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Button font size */
+}
+
+.btn:hover {
+    background-color: #005bb5; /* Darker blue when hovered */
+}
+
+/* Bold top-level dance styles */
+.centered-list > li {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Indent nested bullet points */
+.centered-list ul {
+    margin-left: 20px; /* Indent nested list */
+    font-weight: normal; /* Make sub-items normal weight */
+    list-style-type: disc; /* Use regular bullet points */
+}
+
+/* Center the Tableau Placeholder container */
+.tableauPlaceholder {
+    display: flex;            /* Use Flexbox to center the content */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    width: 100%;              /* Full width */
+    height: 100vh;            /* Full viewport height */
+    margin: 0 auto;           /* Ensure it is centered */
+    max-width: 100%;          /* Prevent overflow */
+    overflow: hidden;         /* Hide overflow */
+}
+
+/* Make the Tableau viz responsive */
+.tableauViz {
+    width: 100%;              /* Make the visualization responsive (full width) */
+    height: 100%;             /* Make the visualization fill the available height */
+    max-width: 100%;          /* Ensure it doesn't overflow horizontally */
+    max-height: 100%;         /* Ensure it doesn't overflow vertically */
+    object-fit: contain;      /* Maintain aspect ratio while fitting the container */
+}
